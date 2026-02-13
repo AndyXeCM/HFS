@@ -1,0 +1,16 @@
+{
+  "name": "hfs-2d-flight-sim",
+  "version": "1.0.0",
+  "description": "Browser multiplayer 2D flight simulator MVP with authoritative Node.js server",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}

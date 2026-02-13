@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>多人 2D 飞行模拟器</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="hud" class="hud"></div>
+
+    <div class="chat-panel">
+      <div id="chatMessages" class="chat-messages"></div>
+      <input id="chatInput" class="chat-input" placeholder="按 Enter 聊天，Esc 取消" maxlength="200" />
+    </div>
+
+    <div id="lobbyOverlay" class="overlay show">
+      <div class="panel">
+        <h2>大厅 LOBBY</h2>
+        <p>输入昵称后进入战场。</p>
+        <input id="nameInput" placeholder="昵称（默认 Guestxxxx）" maxlength="24" />
+        <button id="enterBattleBtn">进入战场</button>
+      </div>
+    </div>
+
+    <div id="deadOverlay" class="overlay">
+      <div class="panel">
+        <h2>你已被击毁</h2>
+        <p id="deathInfo">等待重生...</p>
+        <button id="respawnBtn">重生</button>
+      </div>
+    </div>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
